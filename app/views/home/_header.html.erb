@@ -1,5 +1,12 @@
 <header>
     <h1>My App Header</h1>
     <%= link_to 'App', root_path, class:"navlink" %>
-    <!-- Ese esta partial -->
+    <% if user_signed_in? %>
+        <%= link_to 'Sign out', destroy_user_session_path, method: :delete %>
+        <%= link_to 'Edit user', edit_user_registration_path, class:"navlink" %>
+        <%= link_to 'Forgot password', new_user_password_path, class:"navlink" %>
+    <% else %>
+        <%= link_to 'Sign up', new_user_registration_path, class:"navlink" %>
+        <%= link_to 'Sign in', new_user_session_path, class:"navlink" %>
+    <% end %>
 </header>
