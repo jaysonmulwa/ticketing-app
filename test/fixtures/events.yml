@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  start: MyString
+  end: MyString
+  location: MyString
+  ticket_price: MyString
+  description: MyString
+  organiser: MyString
+
+two:
+  name: MyString
+  start: MyString
+  end: MyString
+  location: MyString
+  ticket_price: MyString
+  description: MyString
+  organiser: MyString
